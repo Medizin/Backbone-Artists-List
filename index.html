@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="" id="form">   
+        <input type="text" placeholder="Some Artist" id="input">
+        <input type="submit" value="Add Artist" id="add" disabled>
+        <input type="submit" value="Delete Artist" id="delete" disabled>
+    </form>
+
+    <div id="container"></div>
+
+    <script id="artist-template" type="text/template">
+        <%= name %>
+    </script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/main.js"></script>    
+</body>
+</html>
